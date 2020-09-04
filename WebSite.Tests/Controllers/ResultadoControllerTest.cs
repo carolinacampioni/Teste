@@ -10,13 +10,13 @@ using WebSite.Controllers;
 namespace WebSite.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class ResultadoControllerTest
     {
         [TestMethod]
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            ResultadoController controller = new ResultadoController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
@@ -25,17 +25,6 @@ namespace WebSite.Tests.Controllers
             Assert.IsNotNull(result);
         }
 
-        [TestMethod]
-        public void About()
-        {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.About() as ViewResult;
-
-            
-        }
 
        
     }

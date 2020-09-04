@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite", "WebSite\WebSite.csproj", "{58BF8C18-300E-4A2A-95AF-BD2ABE527E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Tests", "WebSite.Tests\WebSite.Tests.csproj", "{F2358214-552B-4BF6-AF81-F25F785266D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main.Tests", "WebSite.Tests\Main.Tests.csproj", "{F2358214-552B-4BF6-AF81-F25F785266D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,36 @@
+﻿@model WebSite.Models.ResultadoModel
+@{
+    /**/
+
+    ViewBag.Title = "Resultado";
+}
+@section scripts{
+    <script>
+        var urlPost = '@Url.Action("Executar", "Resultado", new { area = "" })';
+    </script>
+}
+
+<h2>Palavra Triângulo</h2>
+<h4>Verifique se uma palavra é uma palavra triângulo.</h4>
+<br />
+
+@using (Html.BeginForm("Index", "Resultado", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pull-left">
+                <label for="Palavra">Digite uma palavra:</label>
+                 @Html.TextBoxFor(model => model.Palavra)
+                <button type="submit" class="btn btn-sm btn-success" onclick="">Verificar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pull-left">
+                <label for="retorno">Resultado:</label>
+                <label name="retorno" class="label-info"> @ViewBag.Label</label>
+            </div>
+        </div>
+    </div>
+}

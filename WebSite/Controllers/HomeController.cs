@@ -10,21 +10,16 @@ namespace WebSite.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Teste de Analista Programador";
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Resumo de Histórico Profissional.";
 
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
